@@ -1,0 +1,140 @@
+*{
+    font-family: "Iosevka Nerd Font";
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+* :focus{
+    outline: none;
+}
+
+:root{
+    --base: #0F0F0F;
+    --mantle: #0F0F0F;
+    --surface0: #D6E6F2;
+    --surface1: #494d64;
+    --surface2: #5b6078;
+    --text: #D6E6F2;
+    --mauve: #000;
+    --lavender: #b7bdf8;
+    --blue: #8aadf4;
+}
+
+body{
+    background-color: var(--base);
+    text-align: center;
+}
+
+img{
+    width: 6%;
+    height: auto;
+    margin-top: 10%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+h1{
+    color: var(--text);
+}
+
+h2{
+    color: var(--mauve)
+}
+
+h3{
+    color: var(--surface0);
+    width: auto;
+    height: 50%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    background: var(--mauve);
+    border-radius: 10px;
+}
+
+h1, h2{
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-row: 4;
+    margin-bottom: 10px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: auto;
+    outline-color: var(--surface2);
+    background-color: var(--mauve);
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-break: 0;
+    border-radius: 15px;
+}
+
+a{
+    color: var(--surface1);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--text);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:focus{
+    color: var(--text);
+    font-weight: bold;
+}
+
+footer{
+    color: var(--surface2);
+}
+
+footer a:hover{
+    color: var(--mauve);
+}
+
+form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+form > input[type="text"] {
+  height: 30px;
+  width: 780px;
+  font-size: 20px;
+  color: var(--text);
+  background-color: var(--mauve);
+  padding-left: 13px;
+  margin: 15px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  border: 5px solid var(--mantle);
+  vertical-align: top;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
